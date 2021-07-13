@@ -1,10 +1,14 @@
 .div{
     background-color: #1E1E1E;
     display: flex;
-    height: 92.4vh;
     color:white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%;
     
+}
+
+.img{
+    height: 200px;
 }

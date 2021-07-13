@@ -1,13 +1,13 @@
 .div{
     background-color: #1E1E1E;
     display: flex;
-    height: 83.3vh;
+    height: 100%;
     color:white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 30px;
+    
     
 }
 
@@ -15,4 +15,7 @@
     color:white;
     font-size: large;
     
+}
+.content{
+    padding: 40px;
 }

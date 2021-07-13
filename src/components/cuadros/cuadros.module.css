@@ -3,6 +3,6 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: #1E1E1E;
-    min-height: 92.4vh;
-    
+    min-height: 100%;
+    padding-top: 50px;
 }

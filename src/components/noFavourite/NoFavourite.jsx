@@ -4,7 +4,7 @@ import style from './NoFavourite.module.css';
 export default function NoFavourite() {
     return (
         <div className={style.div}>
-            <img src='https://lh3.googleusercontent.com/proxy/PvbnD-En9UEDGD5r8WRTxcIu8nchsSpK56LoEW7mF0L2RNaHGm3z9FVwbtzJLQHu5T2E0aas9A1h9qFOJ6W0JBY2fRpa4xc'/>
+            <img className={style.img} src='https://images.vexels.com/media/users/3/201518/isolated/preview/8fdf595356aa78bdc51ea055a15f3e5e-elemento-de-pincel-de-pintura-de-corazon.png'/>
             <h1>No favourites</h1>
             <h2>You can add favourites by entering each work of art.</h2>
         </div>
