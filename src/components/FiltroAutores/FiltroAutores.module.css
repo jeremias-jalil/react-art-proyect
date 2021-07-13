@@ -1,0 +1,26 @@
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px 10px 100px 10px;
+}
+
+.h5{
+    font-size: 1em;
+    color: antiquewhite;
+    text-decoration: none !important;
+    margin: 5px;
+}
+
+.h5:hover{
+    font-size: 1.2em;
+}
+
+.h3{
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+.h3Hide{
+    display: none;
+}

@@ -1,0 +1,36 @@
+.logo{
+    width: 40px
+  }
+
+  .div{
+      background-color: black;
+      width: 100%;
+      display: flex;
+      align-items:center;
+      padding-left: 20px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);  
+        color:white    
+  }
+
+  .menu{
+      display: flex;
+      margin-left: 30px;
+  }
+
+
+  .activeMenu{
+    color: #9C0018 !important;
+    font-weight: 900;
+  }
+
+  .menuElement{
+    text-decoration: none;
+    color:white;
+    margin: 10px;
+  }
+
+  .menuElement:hover{
+      color: #9C0018;
+      font-weight: 900;
+
+  }

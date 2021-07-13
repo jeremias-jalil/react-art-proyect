@@ -1,0 +1,91 @@
+.cuadro{
+    width: 100%;
+    height: auto;
+        
+}
+
+.div{
+    
+    width: 80%;
+    height: 300px;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    
+    
+}
+
+.divReverse{
+    
+    width: 80%;
+    height: 300px;
+    display: flex;
+    margin: 10px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: end;
+    
+}
+
+.divImage{
+    border: 3px solid #F2F2F2;
+    width: 50%;
+}
+
+ @supports(object-fit: cover){
+    .cuadro{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+} 
+
+.divInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color:#F2F2F2;
+    width: 50%;
+    margin: 0px;
+    padding: 20px;
+}
+.title{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.date{
+    font-size: 1em;
+    margin: 0px;
+}
+
+.artist{
+    font-size: 1em;
+    margin: 0px;
+}
+
+.link{
+    color: black;
+    touch-action:manipulation;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: brown;
+    touch-action:manipulation;
+}
+
+.button{
+    background-color: #9C0018;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+  
+}
+
+.buttonOff{
+    display: none;
+}

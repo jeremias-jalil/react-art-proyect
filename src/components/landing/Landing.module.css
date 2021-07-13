@@ -1,0 +1,12 @@
+.div{
+    display: flex;
+    margin: -20px;
+    background-color: #1E1E1E;
+}
+.video{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    
+   
+}
