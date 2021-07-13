@@ -11,7 +11,7 @@ import store from './redux/store'
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="/react-art-proyect">
       <React.StrictMode>
         <App />
       </React.StrictMode>
