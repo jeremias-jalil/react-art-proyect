@@ -2,11 +2,13 @@
   "name": "react-art-proyect",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://jeremias-jalil.github.io/react-art-proyect/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "@u-wave/react-vimeo": "^0.9.4",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-inner-image-zoom": "^2.0.2",
@@ -19,6 +21,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

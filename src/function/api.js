@@ -19,8 +19,6 @@ export function getSearchApi(search, type) {
 
             }
         })
-
-
 }
 
 export function getSearchForArtistApi(search) {
