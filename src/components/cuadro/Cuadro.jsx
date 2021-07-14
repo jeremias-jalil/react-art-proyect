@@ -20,7 +20,7 @@ export default function Cuadro({ id, artist, date, imgSmall, title, index }) {
                 <h2 className={style.title}>{title}</h2>
                 <h3 className={style.date}>{date}</h3>
                 <h3 className={style.artist}>{artist}</h3>
-                <Link to={`/art/${id}`}className={style.link}>Take a close look</Link>
+                <Link to={`/art/${id}`}className={style.link}><button className={style.button}>Take a close look</button></Link>
                 <button className={!fav ? style.button:style.buttonOff} onClick={()=>dispatch(remove_favourite(id))}>Remove favourite</button>
 
             </div>

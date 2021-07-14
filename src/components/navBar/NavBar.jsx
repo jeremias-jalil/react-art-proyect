@@ -7,7 +7,7 @@ import style from './NavBar.module.css'
 
 export default function navBar() {
     return (
-        <div>
+        <div className={style.div}>
             <h2 className={style.title}>Search for your favorite artwork</h2>
             <Search />
             <Route exact path='/' >

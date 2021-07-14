@@ -2,3 +2,11 @@
     color: white;
     text-align: center;    
 }
+
+@media (max-width: 768px) { 
+    .title{
+        color: white;
+        text-align: center;
+        font-size: 0.9em;
+    }
+}

@@ -12,7 +12,19 @@
   min-height: 100%;
   overflow: auto;
   max-height: 100%;
-  
+    
+}
+
+.none{
+  width: 20%;
+  background-color: darkslategray;
+  padding: 10px 10px 50px 10px;
+  margin-top: 50px;
+  position: fixed;
+  min-height: 100%;
+  overflow: auto;
+  max-height: 100%;
+    
 }
 
 .divContent{
@@ -29,4 +41,42 @@
   width: 100%;
   height: 50px;
   z-index: 2;
+}
+.line {
+  width: 35px;
+  height: 5px;
+  background-color:white;
+  margin: 6px 0;
+}
+.hamb{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .divContent{
+    width: 100%;
+    padding-left: 0%;
+  }
+  .divNav{
+    width: 50%;
+    z-index: 30;
+    background-color: rgba(47, 79, 79, 0.70);
+
+  }
+  .divNavNone{
+    width: 10%;
+    min-width: 40px;
+    background-color: rgba(47, 79, 79, 0.70);
+    padding: 5px;
+    margin-top: 50px;
+    position: fixed;
+    overflow: auto;
+  }
+  .hamb{
+    display: block;
+  }
+  .none{
+    display: none !important;
+  }
+
 }

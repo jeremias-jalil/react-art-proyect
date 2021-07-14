@@ -11,8 +11,7 @@
     display: flex;
     margin: 10px;
     justify-content: space-between;
-    
-    
+       
 }
 
 .divReverse{
@@ -68,6 +67,7 @@
     color: black;
     touch-action:manipulation;
     text-decoration: none;
+    
 }
 
 .link:hover{
@@ -83,9 +83,59 @@
     text-decoration: none;
     margin: 20px 0px 0px 0px;
     cursor: pointer;
+    width: 100%;
   
+}
+.button:hover{
+    background-color: slategray
 }
 
 .buttonOff{
     display: none;
+}
+
+@media (max-width: 768px) { 
+    .div{
+        height: 100%;
+        margin: 5px; 
+        flex-direction: column;     
+    }
+    .divReverse{
+        height: 100%;
+        margin: 5px; 
+        flex-direction: column; 
+        text-align: start
+
+    }
+    .divImage{
+        width: 100%;
+        padding:2px
+    }
+    .divInfo{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .title{
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    
+    .date{
+        font-size: 0.8em;
+        margin: 0px;
+    }
+    
+    .artist{
+        font-size: 0.8em;
+        margin: 0px;
+    }
+
+    .divInfo{
+        margin: 0px;
+        padding: 5px;
+    }
+    .link{
+        font-size: 0.8em;
+    }
 }
