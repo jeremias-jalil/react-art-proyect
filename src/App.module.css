@@ -51,6 +51,18 @@
 .hamb{
   display: none;
 }
+.transp{
+  display: none;
+  width: 20%;
+  background-color: transparent;
+  padding: 10px 10px 50px 10px;
+  margin-top: 50px;
+  position: fixed;
+  min-height: 100%;
+  overflow: auto;
+  max-height: 100%;
+}
+
 
 @media (max-width: 768px) {
   .divContent{
@@ -78,5 +90,11 @@
   .none{
     display: none !important;
   }
-
+  
+  .transp{
+    display: flex;
+    width: 100%;
+    z-index: 29;
+  }
+  
 }

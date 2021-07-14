@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './App.module.css';
 import { Route } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -15,34 +15,41 @@ import About from './components/About/About';
 
 function App() {
 
+  var favourites = useSelector(state => state.favourite)
   var cuadros = useSelector(state => state.cuadros)
   var loading = useSelector(state => state.loading)
-  const [navState, setNavState] = useState(false)
+  const [navState, setNavState] = useState(true)
+
 
   useEffect(() => {
-    setNavState(!navState)
-  }, [cuadros])
+    localStorage.setItem('favourites', JSON.stringify(favourites))
+    
+  }, [favourites])
 
-console.log(navState)
+  
   return (
     <div className={style.div}>
-      <div className={style.topBar}>
-        <Route path='/' >
+      <Route path='/' >
+        <div className={style.topBar}>
           <TopBar />
-        </Route>
-      </div>
-      <div className={!navState?style.divNav:style.divNavNone}>
-          <div className={style.hamb} onClick={()=>setNavState(!navState)}>
-            <div className={style.line}></div>
-            <div className={style.line}></div>
-            <div className={style.line}></div>
+        </div>
+      </Route>
+      <Route path='/' >
+        <div>
+          <div className={navState ? style.divNav : style.divNavNone}>
+            <div className={style.hamb} onClick={() => setNavState(!navState)}>
+              <div className={style.line}></div>
+              <div className={style.line}></div>
+              <div className={style.line}></div>
+            </div>
+            <div className={navState ? style.navBar : style.none}>
+              <NavBar />
+            </div>
           </div>
-        <Route path='/' >
-          <div className={!navState?style.navBar:style.none}>
-          <NavBar />
-          </div>
-        </Route>
-      </div>
+          <div className={navState ? style.transp : style.none} onClick={() => setNavState(!navState)}></div>
+        </div>
+      </Route>
+
       <div className={style.divContent}>
         <Route exact path='/' >
           {!loading ? cuadros?.length ? <Cuadros cuadros={cuadros} /> : <Landing /> : <Loading />}

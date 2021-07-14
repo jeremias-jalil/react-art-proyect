@@ -29,7 +29,7 @@ export default function Detalle(props) {
         <div className={style.div}>
             <h1 className={style.title}>{cuadro.title}</h1>
             <div className={style.divImg}>
-                <InnerImageZoom className={style.img} zoomType='click' src={cuadro?.primaryImageSmall} zoomSrc={cuadro?.primaryImage} />
+                <InnerImageZoom className={style.img} zoomType='click' src={cuadro.primaryImageSmall} zoomSrc={cuadro.primaryImage} />
             </div>
             <div className={style.divCont}>
                 <div className={style.divInfo}>
