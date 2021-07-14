@@ -6,7 +6,7 @@ const initialState = {
     cuadrosArtist: [],
     cuadro: {},
     loading: false,
-    favourite: JSON.parse(localStorage.getItem('favourites')),
+    favourite: JSON.parse(localStorage.getItem('favourites')) || [],
 
 }
 
