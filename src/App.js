@@ -22,11 +22,12 @@ function App() {
 
 
   useEffect(() => {
-    localStorage.setItem('favourites', JSON.stringify(favourites))
-    
+    if (favourite.length > 0) {
+      localStorage.setItem('favourites', JSON.stringify(favourites))
+    }
   }, [favourites])
 
-  
+
   return (
     <div className={style.div}>
       <Route path='/' >
