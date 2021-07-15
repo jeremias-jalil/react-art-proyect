@@ -22,7 +22,7 @@ function App() {
 
 
   useEffect(() => {
-    if (favourite.length > 0) {
+    if (favourites.length > 0) {
       localStorage.setItem('favourites', JSON.stringify(favourites))
     }
   }, [favourites])
