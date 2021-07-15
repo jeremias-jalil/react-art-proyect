@@ -28,7 +28,7 @@ export default function Search() {
 
         }>
             <input className={style.input} type="text" placeholder='Art' onChange={e => { return (setValue(e.target.value)) }} />
-            <select className={style.select} name='Tipo de arte' onChange={e => { return (setType(e.target.value), buscar(value, e.target.value), history.push('/')) }} >
+            <select className={style.select} name='Tipo de arte' onChange={e => { if(value!==''){return (setType(e.target.value), buscar(value, e.target.value), history.push('/')) }}} >
                 <option>Paintings</option>
                 <option>Ceramics</option>
                 <option>Sculpture</option>
