@@ -27,6 +27,11 @@ function App() {
     }
   }, [favourites])
 
+  useEffect(() => {
+    setNavState(!navState)
+  }, [cuadros])
+
+
 
   return (
     <div className={style.div}>
