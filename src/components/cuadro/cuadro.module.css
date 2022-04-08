@@ -1,141 +1,133 @@
-.cuadro{
-    width: 100%;
-    height: auto;
-        
+.cuadro {
+  width: 100%;
+  height: auto;
 }
 
-.div{
-    
-    width: 80%;
-    height: 300px;
-    display: flex;
-    margin: 10px;
-    justify-content: space-between;
-       
+.div {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
 }
 
-.divReverse{
-    
-    width: 80%;
-    height: 300px;
-    display: flex;
-    margin: 10px;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    text-align: end;
-    
+.divReverse {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  margin: 10px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  text-align: end;
 }
 
-.divImage{
-    border: 3px solid #F2F2F2;
-    width: 50%;
+.divImage {
+  border: 3px solid #f2f2f2;
+  width: 50%;
 }
 
- @supports(object-fit: cover){
-    .cuadro{
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
-} 
+@supports (object-fit: cover) {
+  .cuadro {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
 
-.divInfo{
-    display: flex;
+.divInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #f2f2f2;
+  width: 50%;
+  margin: 0px;
+  padding: 20px;
+}
+.title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 1em;
+  margin: 0px;
+}
+
+.artist {
+  font-size: 1em;
+  margin: 0px;
+}
+
+.link {
+  color: black;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: brown;
+  touch-action: manipulation;
+}
+
+.button {
+  background-color: #9c0018;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  margin: 20px 0px 0px 0px;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: slategray;
+}
+
+.buttonOff {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .div {
+    height: 100%;
+    margin: 5px;
     flex-direction: column;
-    justify-content: start;
-    background-color:#F2F2F2;
-    width: 50%;
-    margin: 0px;
-    padding: 20px;
-}
-.title{
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.date{
-    font-size: 1em;
-    margin: 0px;
-}
-
-.artist{
-    font-size: 1em;
-    margin: 0px;
-}
-
-.link{
-    color: black;
-    touch-action:manipulation;
-    text-decoration: none;
-    
-}
-
-.link:hover{
-    color: brown;
-    touch-action:manipulation;
-}
-
-.button{
-    background-color: #9C0018;
-    border: none;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    margin: 20px 0px 0px 0px;
-    cursor: pointer;
+  }
+  .divReverse {
+    height: 100%;
+    margin: 5px;
+    flex-direction: column;
+    text-align: start;
+  }
+  .divImage {
     width: 100%;
-  
-}
-.button:hover{
-    background-color: slategray
-}
+    padding: 2px;
+  }
+  .divInfo {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .title {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
 
-.buttonOff{
-    display: none;
-}
+  .date {
+    font-size: 0.8em;
+    margin: 0px;
+  }
 
-@media (max-width: 768px) { 
-    .div{
-        height: 100%;
-        margin: 5px; 
-        flex-direction: column;     
-    }
-    .divReverse{
-        height: 100%;
-        margin: 5px; 
-        flex-direction: column; 
-        text-align: start
+  .artist {
+    font-size: 0.8em;
+    margin: 0px;
+  }
 
-    }
-    .divImage{
-        width: 100%;
-        padding:2px
-    }
-    .divInfo{
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .title{
-        font-size: 1em;
-        margin-bottom: 10px;
-    }
-    
-    .date{
-        font-size: 0.8em;
-        margin: 0px;
-    }
-    
-    .artist{
-        font-size: 0.8em;
-        margin: 0px;
-    }
-
-    .divInfo{
-        margin: 0px;
-        padding: 5px;
-    }
-    .link{
-        font-size: 0.8em;
-    }
+  .divInfo {
+    margin: 0px;
+    padding: 5px;
+  }
+  .link {
+    font-size: 0.8em;
+  }
 }

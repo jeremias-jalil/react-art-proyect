@@ -1,14 +1,13 @@
-.div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #1E1E1E;
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #1e1e1e;
 }
 
 @media (max-width: 768px) {
-    .load{
-        width: 100px;
-    }
-
+  .load {
+    width: 100px;
+  }
 }

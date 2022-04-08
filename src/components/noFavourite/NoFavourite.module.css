@@ -1,23 +1,21 @@
-.div{
-    background-color: #1E1E1E;
-    display: flex;
-    color:white;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    
+.div {
+  background-color: #1e1e1e;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 
-.img{
-    height: 200px;
+.img {
+  height: 200px;
 }
 
-
-    .divMobile{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 80%;
-    }
+.divMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
