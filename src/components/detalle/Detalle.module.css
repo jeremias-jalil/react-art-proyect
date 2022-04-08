@@ -1,56 +1,56 @@
-.div{
-    display: flex;
-    padding: 50px;
-    background-color: #1E1E1E;
-    flex-direction: column;
-    min-height: 100%;
+.div {
+  display: flex;
+  padding: 50px;
+  background-color: #1e1e1e;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.img{
-    margin: 10px;
-    padding: 10px;
+.img {
+  margin: 10px;
+  padding: 10px;
 }
 
-.divImg{
-    align-self: center;
+.divImg {
+  align-self: center;
 }
 
-.divCont{
-    background-color: rgba(255, 235, 205, 0.39);;
+.divCont {
+  background-color: rgba(255, 235, 205, 0.39);
 }
 
-.title{
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    padding: 10px;
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
 }
 
-.divInfo{
-    background-color: darkgrey;
-    margin: 20px;
-    padding: 20px;
-    }
-
-.link{
-    text-decoration: none;
-    color:black;
-}
-.link:hover{
-    color:mediumblue
+.divInfo {
+  background-color: darkgrey;
+  margin: 20px;
+  padding: 20px;
 }
 
-.button{
-    background-color: #9C0018;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 0px 0px 0px;
-    cursor: pointer;
-    width: 100%;
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  color: mediumblue;
 }
 
-.buttonOff{
-    display: none;
+.button {
+  background-color: #9c0018;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 0px 0px 0px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonOff {
+  display: none;
 }

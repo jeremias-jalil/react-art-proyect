@@ -1,3 +1,1 @@
-export function filterArtist(){
-    
-}
+export function filterArtist() {}

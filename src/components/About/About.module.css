@@ -1,28 +1,24 @@
-.div{
-    background-color: #1E1E1E;
-    display: flex;
-    height: 100%;
-    color:white;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    
-    
+.div {
+  background-color: #1e1e1e;
+  display: flex;
+  height: 100%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-.a{
-    color:white;
-    font-size: large;
-    
+.a {
+  color: white;
+  font-size: large;
 }
-.content{
-    padding: 40px;
+.content {
+  padding: 40px;
 }
 
 @media (max-width: 768px) {
-    .img{
-        width: 200px;
-    }
-
+  .img {
+    width: 200px;
+  }
 }
